@@ -1,0 +1,405 @@
+:root{
+    /*Primary*/
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    /*primary lighter*/
+    --Light-red-lighter: hsl(0, 100%, 93%, 0.471);
+    --Orangey-yellow-lighter: hsl(39, 100%, 93%, 0.471);
+    --Green-teal-lighter: hsl(167, 79%, 91%, 0.471);
+    --Cobalt-blue-lighter: hsla(232, 67%, 93%, 0.471);
+    /* for Gradients*/
+    --Light-slate-blue-background: hsl(252, 100%, 67%);
+    --Light-royal-blue-background: hsl(241, 81%, 54%);
+    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+    /*Neutral*/
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+    --gray-light-blue: hsl(240, 0%, 46%);
+}
+html{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+div {
+    margin: 0;
+	padding: 0;
+	border: 0;
+}
+@media only screen and (min-width: 648px)
+{
+html, body {
+    overflow: auto;
+}
+
+body{
+    font-size: 18px;
+    background-color: var(--Pale-bluer);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+}
+p {
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: var( --White);
+}
+.left_bag{
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, var(--Light-slate-blue-background) 0%,var(--Light-royal-blue-background) 100%);
+    color: var(--White);
+    width: 19rem;
+    height: 28rem;
+    border-radius: 25px;
+    z-index: 1;
+}
+.title
+{
+    margin-top: 30px;
+    font-weight: 700;
+}
+.result
+{
+    color: var(--Light-lavender);
+}
+.circle
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, var(--Violet-blue-circle), var(--Persian-blue-circle));
+    text-align: center;
+    margin-top: 1.5em;
+}
+.done
+{
+    font-weight: 800;
+    font-size: 4rem;
+}
+.tasks
+{
+    color: var(--Light-lavender);
+    font-weight: 500;
+}
+.complimentation
+{
+    font-weight: 800;
+}
+.note
+{
+    width: 14.5em;
+    color: var(--Light-lavender);
+    font-weight: 500;
+    font-size: 0.8em;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    padding-bottom: 1.5em;
+}
+.right_bag{
+    width: 20rem;
+    background-color:var(--White);
+    width: 19rem;
+    height: 28rem;
+    margin-left: -20px;
+    border-radius: 0px 25px 25px 0px;
+    padding-left: 2.8em;
+    box-shadow:  0 1px 50px 0 var(--Pale-blue);
+}
+.task-title-continer
+{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    
+}
+.task-title-continer > p
+{
+    margin-left: 0.7rem;
+}
+.summary
+{
+    color: var(--Dark-gray-blue);
+    font-weight: 800;
+}
+.detailed-tasks
+{
+    height: 19rem;
+    width: 16.5rem;
+}
+.row
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 3.8rem;
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.row > p
+{
+    margin-right: 1rem;
+    color: var(--gray-light-blue);
+}
+.row > p > strong
+{
+    color: var(--Dark-gray-blue);
+}
+.reaction 
+{
+    background-color: var(--Light-red-lighter);
+}
+.reaction > div > p
+{
+    color: var(--Light-red);
+}
+.memory
+{
+    background-color: var(--Orangey-yellow-lighter);
+}
+.memory > div > p
+{
+    color: var(--Orangey-yellow);
+}
+.verbal
+{
+    background-color: var(--Green-teal-lighter);
+}
+.verbal > div > p
+{
+    color: var(--Green-teal);
+}
+.visual
+{
+    background-color: var(--Cobalt-blue-lighter);
+}
+.visual > div > p
+{
+    color: var(--Cobalt-blue);
+}
+.continue-btn
+{
+    border-style: none;
+    background-color: var(--Dark-gray-blue);
+    color: var(--White);
+    font-weight: 700;
+    width: 16.3rem;
+    height: 3.5rem;
+    border-radius: 1.9rem;
+}
+.continue-btn:hover
+{
+    border-style: none;
+    background: linear-gradient(var(--Light-slate-blue-background), var(--Light-royal-blue-background));
+    color: var(--White);
+    font-weight: 700;
+    width: 16.3rem;
+    height: 3.5rem;
+    border-radius: 1.9rem;
+}
+}
+@media only screen and (max-width: 648px)
+{
+    p {
+        display: block;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    body{
+        font-size: 18px;
+        background-color: var(--White);
+        margin: 0;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        background-color: var( --White);
+    }
+    .left_bag{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        background: linear-gradient(to bottom, var(--Light-slate-blue-background) 0%,var(--Light-royal-blue-background) 100%);
+        color: var(--White);
+        border-radius: 0 0 25px 25px;
+        width: 100%;
+        height: 22rem;
+    }
+    .title
+    {
+        font-weight: 700;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .result
+    {
+        color: var(--Light-lavender);
+    }
+    .circle
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 7em;
+        width: 7em;
+        border-radius: 50%;
+        background: linear-gradient(to bottom, var(--Violet-blue-circle), var(--Persian-blue-circle));
+        text-align: center;
+    }
+    .done
+    {
+        font-weight: 800;
+        font-size: 2.5rem;
+    }
+    .tasks
+    {
+        color: var(--Light-lavender);
+        font-weight: 500;
+    }
+    .complimentation
+    {
+        font-weight: 800;
+    }
+    .note
+    {
+        width: 16.5em;
+        color: var(--Light-lavender);
+        font-weight: 500;
+        font-size: 0.8em;
+        margin-bottom: 20px;
+        padding-bottom: 1.5em;
+    }
+    .right_bag{
+        background-color:var(--White);
+        width: 80%;
+        height: 28rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .task-title-continer
+    {
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: space-around;
+        align-items: center;
+        
+    }
+    .task-title-continer > p
+    {
+        margin-left: 0.7rem;
+    }
+    .summary
+    {
+        color: var(--Dark-gray-blue);
+        font-weight: 800;
+    }
+    .detailed-tasks
+    {
+        height: 19rem;
+        width: 100%;
+    }
+    .row
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 3.8rem;
+        font-size: 16px;
+        font-weight: bold;
+        align-items: center;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+    .row > p
+    {
+        margin-right: 1rem;
+        color: var(--gray-light-blue);
+    }
+    .row > p > strong
+    {
+        color: var(--Dark-gray-blue);
+    }
+    .reaction 
+    {
+        background-color: var(--Light-red-lighter);
+    }
+    .reaction > div > p
+    {
+        color: var(--Light-red);
+    }
+    .memory
+    {
+        background-color: var(--Orangey-yellow-lighter);
+    }
+    .memory > div > p
+    {
+        color: var(--Orangey-yellow);
+    }
+    .verbal
+    {
+        background-color: var(--Green-teal-lighter);
+    }
+    .verbal > div > p
+    {
+        color: var(--Green-teal);
+    }
+    .visual
+    {
+        background-color: var(--Cobalt-blue-lighter);
+    }
+    .visual > div > p
+    {
+        color: var(--Cobalt-blue);
+    }
+    .continue-btn
+    {
+        border-style: none;
+        background-color: var(--Dark-gray-blue);
+        color: var(--White);
+        font-weight: 700;
+        width: 100%;
+        height: 3.5rem;
+        border-radius: 1.9rem;
+    }
+    .continue-btn:hover
+    {
+        border-style: none;
+        background: linear-gradient(var(--Light-slate-blue-background), var(--Light-royal-blue-background));
+        color: var(--White);
+        font-weight: 700;
+        width: 100%;
+        height: 3.5rem;
+        border-radius: 1.9rem;
+    }
+}
